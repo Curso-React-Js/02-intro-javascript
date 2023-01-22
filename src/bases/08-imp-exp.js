@@ -16,12 +16,12 @@ import heroes, { owners } from '../data/heroes';
 // }
 
 // find
-const getHeroeById = (id) => heroes.find(heroe => heroe.id === id);
-console.log(getHeroeById(2));
+export const getHeroeById = (id) => heroes.find(heroe => heroe.id === id);
+// console.log(getHeroeById(2));
 
 // filter
-const getHeroesByOwner = (owner) => heroes.filter(heroe => heroe.owner.toUpperCase() === owner.toUpperCase());
-console.log(getHeroesByOwner('DC'));
-console.log(getHeroesByOwner('marvel'));
+export const getHeroesByOwner = (owner) => heroes.filter(heroe => heroe.owner.toUpperCase() === owner.toUpperCase());
+// console.log(getHeroesByOwner('DC'));
+// console.log(getHeroesByOwner('marvel'));
 
-console.log(owners);
+// console.log(owners);
